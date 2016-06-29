@@ -28,11 +28,3 @@ const CONSTANT1 = 1
 // CONSTANT1 = 2
 // CONSTANT;
 
-let CONSTANT1 = 1;
-for (i = 0; i < 2; i++) {
-    // block scoped so it is allowed! 
-    const CONSTANT1 = 2
-    console.log(CONSTANT1)
-}
-
-

@@ -46,22 +46,29 @@
 
 	'use strict';
 	
-	/**
-	 * Old way
-	 */
-	document.addEventListener('click', function () {
-	  console.log('Regular callback:');
-	  console.log(this);
-	});
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
-	/**
-	 * Arrow function
-	 */
-	document.addEventListener('click', function () {
-	  console.log('Arrow function:');
-	  console.log(undefined);
-	});
+	//spread
+	var oldArray = [10, 11, 12];
+	
+	var newArray = [].concat(_toConsumableArray(oldArray.slice(0, 1)), _toConsumableArray(oldArray.slice(2)));
+	
+	console.log(oldArray); // [10,11,12]
+	console.log(newArray); //[10, 12]
+	
+	//rest
+	function someFunction(productId) {
+	    for (var _len = arguments.length, catagories = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+	        catagories[_key - 1] = arguments[_key];
+	    }
+	
+	    console.log(catagories);
+	}
+	
+	console.log(someFunction(1, 'cars'));
+	console.log(someFunction(1, 'sports', 'rugby'));
+	console.log(someFunction(1, 'politics', 'news', 'current events'));
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=arrow-functions.js.map
+//# sourceMappingURL=spread-and-rest-operators.js.map

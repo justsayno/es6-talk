@@ -46,22 +46,24 @@
 
 	'use strict';
 	
-	/**
-	 * Old way
-	 */
-	document.addEventListener('click', function () {
-	  console.log('Regular callback:');
-	  console.log(this);
-	});
+	function sayHello() {
+	    var name = arguments.length <= 0 || arguments[0] === undefined ? 'unknown' : arguments[0];
 	
-	/**
-	 * Arrow function
-	 */
-	document.addEventListener('click', function () {
-	  console.log('Arrow function:');
-	  console.log(undefined);
-	});
+	    console.log('Hello ' + name);
+	}
+	
+	sayHello('john');
+	sayHello();
+	sayHello(undefined);
+	
+	function sayHelloAgain() {
+	    var name = arguments.length <= 0 || arguments[0] === undefined ? 'unknown' : arguments[0];
+	
+	    console.log(arguments.length);
+	}
+	sayHelloAgain('john'); // logs 1
+	sayHelloAgain(); // logs 0
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=arrow-functions.js.map
+//# sourceMappingURL=default-function-parameters.js.map

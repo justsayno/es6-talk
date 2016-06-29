@@ -47,21 +47,13 @@
 	'use strict';
 	
 	/**
-	 * Old way
+	 * Literal templates
 	 */
-	document.addEventListener('click', function () {
-	  console.log('Regular callback:');
-	  console.log(this);
-	});
 	
-	/**
-	 * Arrow function
-	 */
-	document.addEventListener('click', function () {
-	  console.log('Arrow function:');
-	  console.log(undefined);
-	});
+	var name = 'seth';
+	var message = 'Hi ' + seth;
+	console.log(message);
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=arrow-functions.js.map
+//# sourceMappingURL=literal-templates.js.map

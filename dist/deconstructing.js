@@ -46,22 +46,20 @@
 
 	'use strict';
 	
-	/**
-	 * Old way
-	 */
-	document.addEventListener('click', function () {
-	  console.log('Regular callback:');
-	  console.log(this);
-	});
+	var person = {
+	    name: 'john',
+	    role: 'developer',
+	    company: 'Google'
+	};
 	
-	/**
-	 * Arrow function
-	 */
-	document.addEventListener('click', function () {
-	  console.log('Arrow function:');
-	  console.log(undefined);
-	});
+	var name = person.name;
+	var role = person.role;
+	var company = person.company;
+	
+	console.log(name); // john
+	console.log(role); // developer
+	console.log(company); // Google
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=arrow-functions.js.map
+//# sourceMappingURL=deconstructing.js.map

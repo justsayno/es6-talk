@@ -22,19 +22,19 @@ The latest specification of JavaScript called [ECMAScript® 2015](http://www.ecm
 formally es6) bring a whole lot of new langauge features that will make your life better. I am going to go through
 some of the more important ones which include
 
-- Arrow funtions
-- Template literals
-- Modules (while not strictly part of ES 2015 I'm including them here)
-- Deconstructing
-- Default function parameters
-- Let, const and block scoping
-
-These are all supported using [Babel](https://babeljs.io/) for compiling the code back to es6, 
-and [Webpack](https://webpack.github.io/) for loading modules (it can do so much more though please look into
-it!).
-
 ## Table of contents
 
 - [Browser support and Babel/Webpack](/0.browser-support-babel-webpack.md)
 - [New Variable Declaration](/1.new-variable-declarations.md)
 - [Arrow functions](/2.arrow-functions.md)
+- [Literal templates](/3.literal-templates.md)
+- [Default function parameters](/3.literal-templates.md)
+- [Spread operators](/3.literal-templates.md)
+
+I am going to add more to this list in the future.
+
+These are all supported using [Babel](https://babeljs.io/) for compiling the code back to es6, 
+and [Webpack](https://webpack.github.io/) for loading modules (it can do so much more though please look into
+it!).
+
+

@@ -1,39 +1,54 @@
-# Arrow functions
 
-Arrow functions are much like lambas in languages such as C# and look like this:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
 
-```
-/**
- * Old way
- */
-setTimeout(function(){ 
-    console.log('Regular callback:')
-    console.log(this)
-}, 1);
+    <title>ES6 Samples</title>
 
-/**
- * Arrow function
- */
-setTimeout(() => { 
-    console.log('Arrow function:')
-    console.log(this)
-}, 1);
-```
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link src="lib/prism.css"></link>
+  </head>
 
-I have used the above example to show how these "fat arrow functions" don't only save some typing but they help with the use of the 'this' keyword. In the first example 
-if you ran it in Chrome you would get 
+  <body>
 
-```
-#document
-```
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Literal templates</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-Because the click event handler will return the object you are acting on.
+    <div class="container">
 
-If you run the second example you get:
-
-```
-Window{}
-```
-
-Because `this` is not highjacked by the click even handler and instead remains the same `this` as it is in the scope you created the arrow funcion, in this case 
-the window object.
+      <div class="starter-template">
+        <h1>Literal templates</h1>
+        <pre>
+          <code class="language-js">
+let name = 'john'
+let message = `Hi ${john}`
+console.log(message)
+          </code>
+        </pre>
+      </div>
+    </div><!-- /.container -->
+    <script src="lib/prism.js"></script>
+    <script src="dist/literal-templates.js"></script>
+  </body>
+</html>
