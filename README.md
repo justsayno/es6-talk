@@ -25,3 +25,14 @@ some of the more important ones which include
 - Arrow funtions
 - Template literals
 - Modules (while not strictly part of ES 2015 I'm including them here)
+- Deconstructing
+- Default function parameters
+- Let, const and block scoping
+
+These are all supported using [Babel](https://babeljs.io/) for compiling the code back to es6, 
+and [Webpack](https://webpack.github.io/) for loading modules (it can do so much more though please look into
+it!).
+
+## Table of contents
+
+- [Browser support and Babel/Webpack](/browser-support-babel-webpack.md)
