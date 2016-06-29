@@ -35,4 +35,6 @@ it!).
 
 ## Table of contents
 
-- [Browser support and Babel/Webpack](/browser-support-babel-webpack.md)
+- [Browser support and Babel/Webpack](/0.browser-support-babel-webpack.md)
+- [New Variable Declaration](/1.new-variable-declarations.md)
+- [Arrow functions](/2.arrow-functions.md)

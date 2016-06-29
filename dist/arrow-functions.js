@@ -49,15 +49,15 @@
 	/**
 	 * Old way
 	 */
-	setTimeout(function () {
+	document.addEventListener('click', function () {
 	  console.log('Regular callback:');
 	  console.log(this);
 	}, 3000);
 	
 	/**
-	 * New Way
+	 * Arrow function
 	 */
-	setTimeout(function () {
+	document.addEventListener('click', function () {
 	  console.log('Arrow function:');
 	  console.log(undefined);
 	}, 3000);
